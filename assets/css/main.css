@@ -286,16 +286,16 @@ footer {
     height: 75px;
     padding: 0;
     border: none; }
-  .row .table-img, .row .table-size {
+  .row .table-img, .row .table-size, .row .table-res {
     text-align: left; }
   .row .table-img {
     width: 20%; }
   .row .table-size {
-    width: 10%; }
+    width: 20%; }
   .row .table-res {
-    width: 30%; }
+    width: 20%; }
   .row .table-download {
-    width: 30%;
+    width: 20%;
     text-align: right; }
     .row .table-download a {
       color: #000;
