@@ -147,10 +147,21 @@ td, th {
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+* {
+  box-sizing: border-box; }
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: "Source Code Pro"; }
+
+::selection {
+  background: #E3B23C;
+  color: white; }
+
+::-moz-selection {
+  background: #E3B23C;
+  color: white; }
 
 a {
   font-size: 14px; }
@@ -158,7 +169,34 @@ a {
 hr {
   width: 480px;
   margin: 50px auto;
-  border: thin solid #efefef; }
+  border: none;
+  height: 1px;
+  color: #efefef;
+  background: #efefef; }
+
+.large-btn {
+  margin: 20px 0 0 0;
+  font-weight: 300;
+  width: 270px;
+  padding: 15px 0;
+  display: inline-block;
+  background: #000;
+  border: none;
+  color: white;
+  text-transform: lowercase; }
+  .large-btn:hover {
+    background: #E3B23C; }
+
+.subscribe-btn {
+  display: inline-block; }
+
+.text {
+  width: 270px;
+  padding: 15px;
+  -webkit-appearance: none;
+  border: 2px solid #ccc;
+  display: inline-block;
+  margin-top: 20px; }
 
 * {
   font-size: 14px;
@@ -168,12 +206,16 @@ header {
   text-align: center;
   margin-top: 120px; }
 
-.user-image {
+.logo {
   width: auto;
   height: auto; }
 
 .name {
-  font-weight: 600; }
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin: 15px 0; }
 
 #social-links {
   padding: 0;
@@ -212,8 +254,9 @@ header {
   width: 960px;
   margin: 0 auto;
   text-align: center; }
-  #main-container img {
-    width: 100%; }
+
+img {
+  width: 100%; }
 
 .download {
   margin: 10px 0;
@@ -225,20 +268,40 @@ header {
     .download a:hover {
       text-decoration: underline; }
 
-.load-more {
-  margin: 50px 0 0 0;
-  font-weight: 300;
-  padding: 15px 100px;
-  display: inline-block;
-  background: #000;
-  border: none;
-  color: white;
-  text-transform: lowercase; }
-  .load-more:hover {
-    background: #E3B23C; }
-
 footer {
   text-align: center;
   margin: 50px 0; }
+
+.row {
+  padding: 15px 0;
+  width: 100%; }
+  .row tr {
+    height: 50px;
+    border-bottom: 1px solid #efefef; }
+  .row .table-header {
+    height: 75px;
+    padding: 0;
+    border: none; }
+  .row .table-img, .row .table-size {
+    text-align: left; }
+  .row .table-img {
+    width: 20%; }
+  .row .table-size {
+    width: 10%; }
+  .row .table-res {
+    width: 30%; }
+  .row .table-download {
+    width: 30%;
+    text-align: right; }
+    .row .table-download a {
+      color: #000;
+      text-decoration: none; }
+      .row .table-download a:hover {
+        text-decoration: underline; }
+
+.archive-img {
+  width: 40px;
+  height: auto;
+  display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
