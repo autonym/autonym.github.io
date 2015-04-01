@@ -214,8 +214,9 @@ header {
   font-weight: 600;
   text-decoration: none;
   color: #000;
-  display: block;
-  margin: 15px 0; }
+  display: inline-block;
+  margin: 15px 0;
+  width: auto; }
 
 #social-links {
   padding: 0;
@@ -267,6 +268,9 @@ img {
     color: #000; }
     .download a:hover {
       text-decoration: underline; }
+
+.img-article {
+  margin-bottom: 50px; }
 
 footer {
   text-align: center;
