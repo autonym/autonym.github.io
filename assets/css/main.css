@@ -197,6 +197,8 @@ hr {
   border: 2px solid #ccc;
   display: inline-block;
   margin-top: 20px; }
+  .text:focus {
+    border: 2px solid #b3b3b3; }
 
 * {
   font-size: 14px;
